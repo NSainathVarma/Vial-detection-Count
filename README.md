@@ -18,7 +18,7 @@ The user journey begins when they launch the Streamlit application, which immedi
 - **Model Selection**: Fine-tuned YOLO v11 convolutional neural network for 350 epochs
 - **Performance Metrics**: Achieved 0.889 precision, 0.86 recall, 0.88 mAP@50, and 0.649 mAP@50-95
 - **Loss curve**:
-- ![Training Loss Curve]([images/Loss graphs.png](https://github.com/NSainathVarma/Vial-detection-Count/blob/main/images/Loss%20graphs.png)
+<img src="https://github.com/NSainathVarma/Vial-detection-Count/blob/main/images/Loss%20graphs.png" width="500">
 **2. Multi-Modal AI Integration**
 - **Computer Vision**: YOLO v11 for real-time object detection
 - **Natural Language Processing**: Google Gemini 2.5 Flash for contextual understanding
