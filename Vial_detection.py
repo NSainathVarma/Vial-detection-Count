@@ -17,10 +17,8 @@ st.set_page_config(
 class VialDetectionChatbot:
     def __init__(self, model_path="best.pt"):
         # Setup LLM
-        with open("api_key.txt", "r") as f:
-            api_key = f.read().strip()
+        api_key=st.secrets["GOOGLE_API_KEY"]
         os.environ["GOOGLE_API_KEY"] = api_key
-        
         self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7)
         
         # Load YOLO model
@@ -366,4 +364,5 @@ def main():
         })
 
 if __name__ == "__main__":
+
     main()
